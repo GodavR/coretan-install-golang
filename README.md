@@ -94,3 +94,30 @@ Jalankan perintah berikut di terminal:
 echo 'export GOPATH=$HOME/go' >> $HOME/.profile
 source $HOME/.profile </code> <br />
 Pastikan variabel GOPATH telah diatur dengan benar dengan menjalankan <code> echo $GOPATH </code> di terminal.
+
+### 4.Membuat Program Golang Pertama
+Mari kita mulai dengan membuat program Golang pertama. Buat folder baru dengan nama "hello-world" dan buka folder tersebut dengan Visual Studio Code (VS Code). Selanjutnya, buat file baru dengan nama "main.go" di dalam folder tersebut.
+
+Isi file "main.go" dengan kode berikut:
+<code>go
+Copy code
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}</code>
+<br />
+Selanjutnya, buka terminal dari VS Code (Ctrl+`) dan jalankan program dengan perintah:
+<code>
+go run main.go
+</code>
+Program akan mencetak "Hello, World!" di terminal.
+
+Jika Anda ingin meng-compile program menjadi binary, gunakan perintah go build:
+<code>
+go build main.go </code>
+Maka akan tercipta file binary (misalnya "main" atau "main.exe" di Windows) yang dapat dijalankan secara langsung.
+
+Selamat! Anda telah berhasil menjalankan program Golang pertama Anda.

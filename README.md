@@ -71,5 +71,26 @@ Proses instalasi Golang akan berbeda tergantung pada sistem operasi yang Anda gu
 
 3. Setelah instalasi selesai, buka command prompt (CMD) atau PowerShell, dan jalankan perintah berikut untuk memeriksa versi Golang yang terinstal:
 
-   ```bash
-   go version
+   <code> go version </code>
+#### Install Golang di Ubuntu
+Anda dapat menginstal Golang di Ubuntu dengan menggunakan apt:
+
+ <code> sudo apt install golang-go -y </code>
+
+Setelah instalasi selesai, cek versi Golang dengan perintah go version.
+
+#### Install Golang di Fedora
+Di Fedora, Anda dapat menginstal Golang dengan perintah dnf:
+
+<code> sudo dnf install golang </code>
+Setelah instalasi selesai, cek versi Golang dengan perintah go version.
+
+### 3. Setting Environment Variables
+Setelah menginstal Golang, Anda perlu menyiapkan beberapa variabel lingkungan. Di Ubuntu dan Fedora, Anda perlu menambahkan GOPATH ke environment variables.
+
+Jalankan perintah berikut di terminal:
+
+<code>mkdir -p $HOME/go
+echo 'export GOPATH=$HOME/go' >> $HOME/.profile
+source $HOME/.profile </code> <br />
+Pastikan variabel GOPATH telah diatur dengan benar dengan menjalankan <code> echo $GOPATH </code> di terminal.
